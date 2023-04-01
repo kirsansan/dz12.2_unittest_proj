@@ -13,8 +13,12 @@ def get(array, index, default=None):
     """
     if index < 0:
         return default
-
-    return array[index]
+    try:
+        tmp_array_field = array[index]
+    except IndexError:
+        print("array is empty")
+        return None
+    return tmp_array_field
 
 
 def my_slice(coll, start=0, end=None):
