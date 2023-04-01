@@ -1,3 +1,6 @@
 # файл dicts.py
 def get_val(collection, key, default='git'):
-    pass
+    if key in collection.keys():
+        return collection[key]
+    else:
+        return default

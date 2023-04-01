@@ -8,3 +8,4 @@ class TestArrs(unittest.TestCase):
         self.assertEqual(get_val(data, "11+11", "joke"), "equal 20 (twenty too)")
         self.assertEqual(get_val({}, "10+10", "def"), "def")
         self.assertEqual(get_val(data, "10+10"), "equal 20")
+        self.assertEqual(get_val(data, "where am i?"), "git")
